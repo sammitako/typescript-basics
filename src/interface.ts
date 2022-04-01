@@ -47,3 +47,23 @@ const expert: Developer = {
   name: "Sam",
   skills: ["javascript", "react", "nextjs", "typescript"],
 };
+
+// Type Alias
+type Human = {
+  name: string;
+  age?: number;
+};
+
+type Professional = Human & {
+  skills: string[];
+};
+
+const human: Human = {
+  name: "Sean",
+  age: 33,
+};
+
+const pro: Professional = {
+  name: "Sam",
+  skills: ["javascript", "react", "nextjs", "typescript"],
+};
