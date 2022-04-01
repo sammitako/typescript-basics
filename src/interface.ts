@@ -1,3 +1,4 @@
+// 클래스
 interface Shape {
   getArea(): number;
 }
@@ -26,3 +27,23 @@ const shapes: Shape[] = [circle, rectangle];
 shapes.forEach((shape) => {
   console.log(shape.getArea());
 });
+
+// 객체
+interface Person {
+  name: string;
+  age?: number; // age가 있을 수도 있고 없을 수도 있다.
+}
+
+interface Developer extends Person {
+  skills: string[];
+}
+
+const person: Person = {
+  name: "Sean",
+  age: 33,
+};
+
+const expert: Developer = {
+  name: "Sam",
+  skills: ["javascript", "react", "nextjs", "typescript"],
+};
