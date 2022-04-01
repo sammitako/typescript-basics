@@ -67,3 +67,9 @@ const pro: Professional = {
   name: "Sam",
   skills: ["javascript", "react", "nextjs", "typescript"],
 };
+
+type People = Human[];
+const people: People = [human, pro];
+
+type Color = "red" | "orange" | "green";
+const picked: Color = "orange";
